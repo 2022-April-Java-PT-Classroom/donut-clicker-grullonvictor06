@@ -1,13 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Donut Clicker</title>
-  </head>
-  <body>
-    <div class="container"></div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Donut Clicker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<header class="header">
+ <h1 class = >Cliff Clicker!</h1>
+  <div class="dropdown">
+    <button onclick="info()" class="dropbtn">Info</button>
+    <div id="myDropdown" class="dropdown-content">
+      <a href="#">About the Donut Shop</a>
+      <a href="https://orteil.dashnet.org/cookieclicker/" target="_blank">Our Inspiration</a>
+      <a href="https://grullonvictor06.github.io/" target="_blank">The Developer</a>
+    </div>
+  </div>
+</header>
+<body>
+  <main>
+    <h1 class="donutCount"></h1>
+    <button class="addDonutBtn"><img src="images\cliff.png" alt="cliffPic"></button>
+    <h4 class="autoClickerCount"></h4>
+    <h4 class="autoClickerCost"></h4>
+    <button class="addAutoClickerBtn">Add Auto Clicker</button>
+    <h3 class="multiplierCount"></h3>
+    <h3 class="multiplierCost"></h3>
+    <button class="multiplierBtn">Add Multiplier</button>
+    <div class="container">
+    <button class="resetBtn">reset</button>
+    </div>
     <script src="./index.js"></script>
-  </body>
+    <script src="./DonutMaker.js"></script>
+  </main>
+</body>
+
 </html>
